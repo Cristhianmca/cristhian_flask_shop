@@ -9,3 +9,4 @@ flask-restful
 python-dotenv
 flask-jwt-extended
 python-decouple
+gunicorn
