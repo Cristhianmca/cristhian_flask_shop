@@ -15,6 +15,8 @@ class MarcaSchema(SQLAlchemyAutoSchema):
         model = Marca
         
 class ProductoSchema(SQLAlchemyAutoSchema):
+    categoria = ma.Nested(CategoriaSchema)
+    marca = ma.Nested(MarcaSchema)
     class Meta:
         model = Producto
        
